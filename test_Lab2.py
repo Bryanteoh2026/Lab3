@@ -1,16 +1,22 @@
-import lab2.Lab2 as Lab2
+import lab2.Lab2 as lab2 
 
-def find_min_max():
-    float_list = [5.0, 67.0, 32.0]
-    result = Lab2.calc_min_max_temp(float_list)
+def test_min_max():
+    float_list = [1, 2, 3, 4, 5]
+
+    result = lab2.calc_min_max_temp(float_list)
+
     assert result == 1
- 
-def find_average():
-    float_list = [5.0, 67.0, 32.0]
-    result = Lab2.calc_average_temp(float_list)
+
+def test_cal_ave():
+    float_list = [1, 2, 3, 4, 5]
+
+    result = lab2.calc_average_temp(float_list)
+
     assert result == -1
- 
-def find_median():
-    float_list = [5.0, 67.0, 32.0]
-    result = Lab2.calc_median_temp(float_list)
+
+def test_cal_median_temp():
+    float_list = [1, 2, 3, 4, 5]
+
+    result = lab2.calc_median_temp(float_list)
+
     assert result == 0
