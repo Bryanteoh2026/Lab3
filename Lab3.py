@@ -1,3 +1,6 @@
+from zmq import REQ
+
+
 print("Lab 3 - Software Unit Testing with PyTest")
 
 SORT_ASCENDING = 0
@@ -38,6 +41,7 @@ def bubble_sort(arr, sorting_order):
 
     return arr_result
 
+
 def main():
     # Driver code to test above
     arr = [64, 34, 25, 12, 22, 11, 90]
@@ -46,7 +50,7 @@ def main():
     result = bubble_sort(arr, SORT_ASCENDING)
     print("\nSorted array in ascending order: ")
     print(result)
-
+   
     # Sort in descending order
     print("Sorted array in descending order: ")
     result = bubble_sort(arr, SORT_DESCENDING)
